@@ -58,7 +58,7 @@
                             if ($user && password_verify($password, $user['password'])) {
                                 // Login sukses, set session atau token, lalu arahkan ke halaman utama
                                 session_start();
-                                $_SESSION['user'] = $user['id'];
+                                $_SESSION['user-'] = $user['id'];
                                 header("Location: read.php"); // Ganti dengan halaman utama setelah login
                             } else {
                                 // Login gagal, tampilkan pesan kesalahan
